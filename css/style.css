@@ -1,0 +1,91 @@
+:root {
+  --primary-font: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+body {
+  background-color: black;
+  font-family: var(--primary-font);
+  color: white;
+  text-align: center;
+}
+
+h2,
+a {
+  color: white !important;
+}
+
+.nav-link {
+  margin: 0 10px;
+  font-size: 0.7rem !important;
+  font-weight: 800;
+  color: rgb(189, 187, 187) !important;
+}
+.nav-link:hover {
+  color: white !important;
+}
+
+.tituloCartelera {
+  text-align: start;
+  font-family: var(--primary-font) !important;
+  font-weight: 100 !important;
+  padding: 20px;
+  font-size: 1.5rem;
+  color: rgb(189, 187, 187) !important;
+  margin-top: 30px;
+}
+
+#postersCartelera p {
+  font-family: var(--primary-font);
+  font-size: 0.8rem;
+  padding: 5px;
+}
+#postersCartelera h2 {
+  font-family: var(--primary-font);
+  font-size: 1rem !important;
+  font-weight: bold !important;
+}
+#postersCartelera button {
+  padding: 5px;
+  font-size: 0.8rem;
+  margin-top: 0;
+  cursor: pointer;
+  background-color: rgb(255, 219, 18);
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: 0.3s all ease-in-out;
+}
+#postersCartelera button:hover {
+  background-color: rgb(35, 95, 224);
+}
+#postersCartelera img {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+}
+#postersCartelera img:hover {
+  scale: 1.07;
+}
+
+#postersCartelera div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 420px;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.postersCartelera {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
