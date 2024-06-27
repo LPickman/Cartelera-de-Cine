@@ -1,25 +1,4 @@
-.nav-link {
-  margin: 0 10px;
-  font-size: 0.7rem !important;
-  font-weight: 800;
-  color: rgb(189, 187, 187) !important;
-  font-family: var(--primary-font) !important;
-  &:hover {
-    color: white !important;
-  }
-}
-
-.tituloCartelera {
-  text-align: start;
-  font-family: var(--primary-font) !important;
-  font-weight: 100 !important;
-  padding: 20px;
-  font-size: 1.5rem;
-  color: rgb(189, 187, 187) !important;
-  margin-top: 30px;
-}
-
-#postersCartelera {
+#posters {
   p {
     font-family: var(--primary-font);
     font-size: 0.8rem;
@@ -29,6 +8,7 @@
     font-family: var(--primary-font);
     font-size: 1rem !important;
     font-weight: bold !important;
+    height: 20px;
   }
   button {
     padding: 5px;
@@ -61,7 +41,7 @@
   }
 }
 
-#postersCartelera div {
+#posters div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,12 +49,49 @@
   height: 420px;
   align-content: space-around;
   justify-content: space-around;
+  margin-top: 30px;
 }
 
-.postersCartelera {
+#posters {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+}
+
+.content-buscador-pelicula {
+  margin-top: 0;
+  padding: 30px;
+}
+
+#form-pelicula {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.buscar {
+  padding: 5px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--primary-font);
+}
+
+.buscarButton {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(148, 175, 231);
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s all ease-in-out;
+  font-family: var(--primary-font);
+}
+
+.buscarButton:hover {
+  background-color: rgb(59, 59, 224);
+  color: white;
 }

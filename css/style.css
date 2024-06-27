@@ -19,6 +19,7 @@ a {
   font-size: 0.7rem !important;
   font-weight: 800;
   color: rgb(189, 187, 187) !important;
+  font-family: var(--primary-font) !important;
 }
 .nav-link:hover {
   color: white !important;
@@ -48,15 +49,19 @@ a {
   padding: 5px;
   font-size: 0.8rem;
   margin-top: 0;
+  color: white;
   cursor: pointer;
-  background-color: rgb(255, 219, 18);
-  border: none;
-  border-radius: 5px;
-  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 2px;
+  font-weight: 400;
   transition: 0.3s all ease-in-out;
+  font-family: var(--primary-font) !important;
 }
 #postersCartelera button:hover {
-  background-color: rgb(35, 95, 224);
+  background-color: gold;
+  color: black;
+  border: 1px solid gold;
 }
 #postersCartelera img {
   height: 300px;
@@ -86,6 +91,102 @@ a {
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+#posters p {
+  font-family: var(--primary-font);
+  font-size: 0.8rem;
+  padding: 5px;
+}
+#posters h2 {
+  font-family: var(--primary-font);
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  height: 20px;
+}
+#posters button {
+  padding: 5px;
+  font-size: 0.8rem;
+  margin-top: 0;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 2px;
+  font-weight: 400;
+  transition: 0.3s all ease-in-out;
+  font-family: var(--primary-font) !important;
+}
+#posters button:hover {
+  background-color: gold;
+  color: black;
+  border: 1px solid gold;
+}
+#posters img {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+}
+#posters img:hover {
+  scale: 1.07;
+}
+
+#posters div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 420px;
+  align-content: space-around;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+#posters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-buscador-pelicula {
+  margin-top: 0;
+  padding: 30px;
+}
+
+#form-pelicula {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.buscar {
+  padding: 5px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--primary-font);
+}
+
+.buscarButton {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(148, 175, 231);
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s all ease-in-out;
+  font-family: var(--primary-font);
+}
+
+.buscarButton:hover {
+  background-color: rgb(59, 59, 224);
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
