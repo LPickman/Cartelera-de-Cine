@@ -70,25 +70,33 @@
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  text-align: center;
+  max-width: 2000px;
+  input {
+    &::placeholder {
+      font-family: var(--primary-font) !important;
+      font-size: 1rem !important;
+    }
+  }
 }
 
 .buscar {
   padding: 5px;
-  width: 300px;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
   font-family: var(--primary-font);
 }
 
 .buscarButton {
   padding: 5px;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: rgb(148, 175, 231);
   cursor: pointer;
   font-weight: 500;
   transition: 0.3s all ease-in-out;
-  font-family: var(--primary-font);
+  font-family: var(--primary-font) !important;
+  color: white;
 }
 
 .buscarButton:hover {
