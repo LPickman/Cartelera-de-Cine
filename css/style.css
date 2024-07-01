@@ -318,4 +318,21 @@ iframe {
   color: rgb(189, 187, 187) !important;
 }
 
+footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+footer ul {
+  margin-left: 0;
+  list-style: none;
+  text-align: start;
+}
+footer ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+footer ul li a {
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */
