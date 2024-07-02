@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div>
             <img src="${imgCartelera[i]}" alt="${titleCartelera[i]}"/>
             <p>Reparto: ${creditsCartelera[i]}</p>
-            <button class="comprar-entradas" data-titulo="${titleCartelera[i]}">Comprar Entradas</button>
+            <button class="comprar-entradas" data-titulo="${titleCartelera[i]}" data-img="${imgCartelera[i]}">Comprar Entradas</button>
           </div>
         `;
         postersCartelera.innerHTML += posterCartelera;

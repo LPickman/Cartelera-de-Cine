@@ -1,5 +1,5 @@
 :root {
-  --primary-font: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --primary-font: "Montserrat", sans-serif;
   --bs-navbar-color: white;
 }
 
@@ -333,6 +333,100 @@ footer ul li {
 }
 footer ul li a {
   text-decoration: none;
+}
+
+#carrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#carrito div {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+}
+#carrito div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#carrito div div h3 {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  text-align: center;
+  color: gold;
+  font-size: 2rem;
+}
+#carrito div div select {
+  width: 95%;
+  font-size: 0.9rem;
+  padding: 5px;
+  background-color: transparent;
+  color: white;
+  border-radius: 3px;
+}
+#carrito div div select option {
+  background-color: #212529;
+  font-family: var(--primary-font) !important;
+}
+#carrito div img {
+  width: 30%;
+  height: 100%;
+}
+
+.precio-carrito {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-top: 10px;
+  gap: 10px;
+}
+.precio-carrito input {
+  width: 50px;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: white;
+  text-align: center;
+}
+.precio-carrito p {
+  margin: 0;
+  font-family: var(--primary-font);
+}
+.precio-carrito h4 {
+  margin: 0;
+  font-family: var(--primary-font);
+}
+
+.precio-final {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid gray;
+  padding: 10px;
+  gap: 20px;
+}
+.precio-final div {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+.precio-final div h4 {
+  font-family: var(--primary-font) !important;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.precio-final button {
+  background-color: gold;
+  border: none;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  padding: 10px;
+  font-size: 1.2rem;
+  transition: 0.3s all ease-in-out;
+}
+.precio-final button:hover {
+  background-color: rgb(240, 217, 92);
 }
 
 /*# sourceMappingURL=style.css.map */
