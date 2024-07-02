@@ -66,7 +66,7 @@ function agregarACarrito() {
                         </select>
 
                         <div class="precio-carrito">
-                        <input type="number" min="1" placeholder="0" value="1" id="cantidad-entradas" oninput="mostrarValorSeleccionado()"></input>
+                        <input type="number" min="1" max="5" placeholder="0" value="1" id="cantidad-entradas" oninput="mostrarValorSeleccionado()"></input>
                         <p>X</p>                      
                         <h4 id="precio"> </h4>
                         </div>
