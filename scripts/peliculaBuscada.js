@@ -40,8 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const credits = elemento.topCredits || "Información no disponible";
 
             const poster = `
-              <div>
-                <h2>${title}</h2>
+              <div>              
                 <img src="${img}" alt="${title}"/>
                 <p>Reparto: ${credits}</p>
                 <button class="comprar-entradas" data-titulo="${title}" data-img="${img}">Comprar Entradas</button>
