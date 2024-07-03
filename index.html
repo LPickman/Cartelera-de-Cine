@@ -55,8 +55,8 @@
           class="btn"
           type="button"
           data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasTop"
-          aria-controls="offcanvasTop"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
         >
           <iconify-icon
             icon="pepicons-pencil:ticket-circle-filled"
@@ -68,12 +68,12 @@
         <div
           class="offcanvas offcanvas-end bg-dark"
           tabindex="-1"
-          id="offcanvasTop"
-          aria-labelledby="offcanvasTopLabel"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
         >
           <div class="offcanvas-header bg-dark">
             <div style="width: 100%; color: white; text-align: start">
-              <h5 class="offcanvas-title" id="offcanvasTopLabel">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">
                 Comprar Entradas
               </h5>
               <hr />
@@ -86,7 +86,7 @@
             ></button>
           </div>
           <div class="offcanvas-body" style="color: white" id="carrito">
-            <p>No compraste entradas</p>
+            <p>No has seleccionado entradas</p>
           </div>
         </div>
       </nav>
@@ -150,6 +150,10 @@
         />
         <input type="submit" value="Buscar" class="buscarButton" />
       </form>
+      <div id="loading" class="loading">
+        <img src="img/loading.gif" alt="" />
+        Cargando...
+      </div>
 
       <div class="container" id="posters"></div>
     </div>

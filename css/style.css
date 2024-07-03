@@ -253,6 +253,17 @@ a {
   color: white;
 }
 
+.loading {
+  display: none;
+  color: gold;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 20px;
+}
+.loading img {
+  width: 20px;
+}
+
 .precios-table {
   max-width: 600px;
   width: 90%;
@@ -380,7 +391,7 @@ footer ul li a {
   flex-direction: row !important;
   justify-content: center !important;
   align-items: center !important;
-  margin-top: 10px;
+  margin-top: 15px;
   gap: 10px;
 }
 .precio-carrito input {
@@ -427,6 +438,10 @@ footer ul li a {
 }
 .precio-final button:hover {
   background-color: rgb(240, 217, 92);
+}
+
+#precio {
+  font-size: 1.2rem !important;
 }
 
 /*# sourceMappingURL=style.css.map */
