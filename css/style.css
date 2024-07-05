@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-font: "Montserrat", sans-serif;
   --bs-navbar-color: white;
@@ -19,12 +20,22 @@ a {
   color: white !important;
 }
 
+.btn,
+.dropdown {
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 .dropdown-toggle::after {
   display: none !important;
 }
 
 .dropdown-toggle {
   border: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center;
 }
 
 .dropdown-menu {
@@ -416,6 +427,7 @@ footer ul li a {
   border-top: 1px solid gray;
   padding: 10px;
   gap: 20px;
+  margin-top: 160px;
 }
 .precio-final div {
   display: flex;
@@ -442,6 +454,109 @@ footer ul li a {
 
 #precio {
   font-size: 1.2rem !important;
+}
+
+#datos-personales {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  margin-top: 60px;
+}
+
+.seating {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 600px; /* Ancho máximo del contenedor de butacas */
+}
+
+.row {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  margin: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  flex-shrink: 0; /* Evitar que los asientos se redimensionen en dispositivos móviles */
+}
+
+.ocupado {
+  background-color: #ff9999; /* Color para asientos ocupados */
+  cursor: not-allowed;
+}
+
+.screen {
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Estilos para las butacas ocupadas */
+.seat.ocupado {
+  background-color: #ff9999; /* Color de fondo para butacas ocupadas */
+  color: #333; /* Color del texto para butacas ocupadas */
+}
+
+/* Estilos para las butacas disponibles */
+.seat.disponible {
+  background-color: #a5d6a7; /* Color de fondo para butacas disponibles */
+  color: #333; /* Color del texto para butacas disponibles */
+}
+
+/* Estilos para las butacas seleccionadas */
+.seat.seleccionada {
+  background-color: #ffd54f; /* Color de fondo para butacas seleccionadas */
+  color: #333; /* Color del texto para butacas seleccionadas */
+}
+
+#compra img {
+  margin-top: 50px;
+  width: 200px;
+}
+#compra #codigo-qr {
+  width: 200px;
+  margin: 0 auto;
+}
+
+#retiro-entrada h1 {
+  color: gold !important;
+  font-family: var(--primary-font) !important;
+}
+#retiro-entrada h3 {
+  font-size: 1rem;
+  font-family: var(--primary-font) !important;
+}
+
+#datos-retiro {
+  padding: 15px;
+  width: 200px;
+  margin: 0 auto;
+  border: 0.7px solid white;
+}
+
+#importante {
+  font-family: var(--primary-font);
+  font-size: 0.8rem;
+  color: red;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

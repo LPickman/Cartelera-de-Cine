@@ -1,9 +1,19 @@
+.btn,
+.dropdown {
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 .dropdown-toggle::after {
   display: none !important;
 }
 
 .dropdown-toggle {
   border: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center;
 }
 
 .dropdown-menu {

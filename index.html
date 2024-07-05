@@ -24,6 +24,7 @@
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
+            id="menu-hamburguesa"
           >
             <iconify-icon
               icon="ic:baseline-menu"
@@ -45,7 +46,7 @@
         </div>
 
         <!--LOGO-->
-        <a class="logo" href="#"
+        <a class="logo container" href="#"
           ><span style="color: gold; text-shadow: 0.5px 0.5px white">Arte</span
           ><span style="text-shadow: 1px 1px gold">PLEX</span></a
         >
@@ -140,7 +141,7 @@
     <!--BUSCAR PELICULAS-->
     <h1></h1>
     <div class="bg-dark content-buscador-pelicula">
-      <form action="" id="form-pelicula">
+      <form action="" id="form-pelicula" onchange="mostrarValorSeleccionado()">
         <input
           type="text"
           placeholder="Buscar Película"

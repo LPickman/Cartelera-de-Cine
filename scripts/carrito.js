@@ -72,13 +72,21 @@ function agregarACarrito() {
             <h4>Total:</h4>
             <h4 id="precio-total"></h4>
           </div>
-          <button>Comprar</button>
+          <button id="elegir-butacas">Elegir Butaca</button>
         </div>
       `;
       mostrarValorSeleccionado();
+      elegirButacas();
     }
   });
 }
 
 // Llamar a la función para agregar la funcionalidad del carrito
 agregarACarrito();
+
+function elegirButacas() {
+  const elegirButacas = document.getElementById("elegir-butacas");
+  elegirButacas.addEventListener("click", () => {
+    window.location.href = "pages/butacas.html";
+  });
+}

@@ -1,0 +1,35 @@
+#compra {
+  img {
+    margin-top: 50px;
+    width: 200px;
+  }
+  #codigo-qr {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+
+#retiro-entrada {
+  h1 {
+    color: gold !important;
+    font-family: var(--primary-font) !important;
+  }
+  h3 {
+    font-size: 1rem;
+    font-family: var(--primary-font) !important;
+  }
+}
+
+#datos-retiro {
+  padding: 15px;
+  width: 200px;
+  margin: 0 auto;
+  border: 0.7px solid white;
+}
+
+#importante {
+  font-family: var(--primary-font);
+  font-size: 0.8rem;
+  color: red;
+  padding: 10px;
+}
